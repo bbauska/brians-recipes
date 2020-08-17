@@ -1,0 +1,17 @@
+/* <!-- html/Assets/Style.css table head & cell data - single pixel solid black border (all 3) !--> */
+
+	table, th, td {
+		border: 1px solid red;
+	}
+	
+	table {border-collapse; collapse;}
+	
+	th, td {padding: 10px;}
+	
+	thead, tfoot {background-color: antiquewhite;}
+	
+	tbody {background-color: floralwhite;}
+	
+	tr:nth-child(even) {background-color: blanchedalmond;}
+	
+	

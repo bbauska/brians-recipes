@@ -1,0 +1,66 @@
+/* ch5 Practice - html/Assets/ch5p.css  */
+
+#table-1  {
+    width: 300px;
+    height: 150px;
+    background-color: #c3c0c0;
+    border: 5px;
+    color: whitesmoke;
+    text-align: center
+}
+
+#table-1 th  {
+    background-color: black;
+    text-decoration: underline;
+}
+#ch5th1  {
+    font-weight: 600;
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+/* 
+-----------------------------------
+table 2 style here 
+-----------------------------------
+*/
+
+#table-2  {
+    width: 500px;
+    height: 150px;
+    border-spacing: 1px;
+    border-color: black;
+    border-collapse: collapse
+}
+
+.top-row-2  {
+    background-color: #686969
+}
+
+.middle-row-2, .bottom-row-2 {
+    background-color: #c9c9c9;
+}
+
+/* 
+-----------------------------------
+table 3 style here 
+-----------------------------------
+*/
+
+#table-3  {
+    width: 500px;
+    height: 250px;
+    border-collapse: separate;
+}
+#table-3 th  {
+    background-color: dodgerblue
+}
+#table-3 tr:nth-child(even)  {
+    background-color: #bdd9ed
+}
+#table-3 tr:nth-child(odd)  {
+    background-color: lightgrey;
+}
+#table-3 tr:hover {
+    background-color: #d6f069; }

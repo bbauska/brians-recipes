@@ -1,0 +1,23 @@
+/* new 1.css */
+<!DOCTYPE html>
+   <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>On the Inventor of Gunpowder</title>  /* Documentation for poem: On the Inventor of Gunpowder by John Milton */
+         <style>
+            /* CSS goes here */
+      </style>
+    </head>
+ 
+   <body>
+      <h1>On the Inventor of Gunpowder.</h1>
+ 
+      <address rel="author">By John Milton</address>
+ 
+      <p>Praise in old time the sage Prometheus won,<br>
+Who stole ethereal radiance from the sun;<br>
+But greater he, whose bold invention strove<br>
+To emulate the fiery bolts of Jove.</p>
+ 
+   </body>
+</html>

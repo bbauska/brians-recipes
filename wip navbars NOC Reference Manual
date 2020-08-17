@@ -1,0 +1,731 @@
+<!DOCTYPE <html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: f2f2f2;
+  text-align: center;
+  padding; 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) (display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 10px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+<!-- myTopnav: navigation bar for NOC Reference Manual -->
+<div
+class="topnav" id="myTopnav">
+  <a href="#home" class="active">| NOC Home |</a>
+  <a href="#dailychk">| Daily Check |</a>
+  <a href="#fredi">| Add Fredi |</a>
+  <a href="#dthp">| Create DTHP |</a>
+  <a href="#acronyms">| Acrnms |</a>
+  <a href="#linux">| Linux |</a>
+  <a href="#citkm">| C-I-T-K-M |</a>
+  <a href="#towers">| Towers |</a>
+
+<!--  <a href="contact">Contact</a>
+  <a href="about">About</a>
+-->
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa bars"></i>
+  </a>
+</div>
+
+<!------------------------------------------------------------------------->
+
+<style>
+div {
+  id="home";
+  background-color: #808000;  <!-- military green -->
+  color: #ffffff;
+  padding: 20px;
+}
+</style>
+<center>
+<div>
+<title>NETWORK OPERATIONS CENTER (NOC)</title>
+<h1 style="font-size:200%">NETWORK OPERATIONS CENTER (NOC) </h1>
+<h2 style="font-size:200%">OPERATOR USER MANUAL 'HIGHLIGHTS'
+<br>for: RAVENSWOOD SOLUTIONS</h2>
+</center>
+
+<body style="font-size:150%";color="ff5733">
+
+<!-- home: NOC home page - NOC Reference Manual -->
+<p style="font-size:150%";color="009900">
+<big>
+<!-- jobdesc: Job Description -->
+
+<!------------------------------------------------------------------------->
+
+<h2 id="jobdesc">
+NOC Operator Job Description </big></p>
+<ul style="font-size:100%";color="009900"><li>	Monitor the training and tracking of troops during their exercises. </li>
+<li>	Operate radios and communicate with other staff members to assist with a variety of situations. </li>
+<li>	Assist with the scanning in and database entry of soldiers who arrrive at the base. </li>
+<li>	Make changes in the database when either asked to or through EDI issue reports. </li>
+<li>	Assist with the packaging of data disc from the AAR's (packaging). </li>
+<li>	Provide support using communications and tracking for coverage testing. </li>
+<li>	Assist other teams (Netconfig, Radio Frequency {RF}, Rangeops, Tac) with anything that they might need during downtime. </li>
+</ul>
+<font color="9900cc">
+<p style="font-size:80%";color="9900cc"></p>
+</div>
+
+<!-- Frequently used Linux commands & descriptions -->
+<br>
+<p id="linux">
+<big><center>
+Linux v7.6 - Frequently Used Commands & Descriptions
+</center></big>
+</p>
+<ul><small>
+<li>	<b><u>cat</u></b> - concatenate - it has three related functions with regard to text files; displaying them, combining copies of them, and creating new ones.</li>
+<li>	<b><u>cd</u></b> - change directory.  ex; cd /usr/local/Orion/orion-common.</li>
+<li>	<b><u>df</u></b> - disk free - diplay information related to file systems about total and available space.  <i>For more info: $man df.</i> </li>
+<li>	<b><u>echo</u></b> - built in <b>command</b> in the bash and C shells that writes its arguments to standard output.  <i>For more info: $man echo.</i> </li>
+<li>	<b><u>exit</u></b>  - exit command - exit the shell where it is currently running.  After pressing enter, the terminal will simply close.</li>
+<li>	<b><u>find</u></b>  - command-line utility that searches one or more directory trees of a file system, locates files based on some user-specified criteria and applies a user-specified action on each matched file.</li>
+<!--
+<li>	finger - find information about computer users.  It usually lists the login name, the full name, and possibly other details about the user you are fingering.</li>
+-->
+
+<li>	<b><u>grep</u></b>  - <b>g</b>lobal <b>r</b>egular <b>e</b>xpression <b>p</b>rint - command-line utility for searching plain-text data sets for lines that match a regular expression.</li>
+<li>	<b><u>head</u></b>  - reads the first 10 lines of any given file name.</li>
+<li>	<b><u>history</u></b>  - print out the bash history of the current user to the screen.  Commands are numbered, with old commands at the top and newer commands at the bottom.  The history is stored in the ~/bash_history file by default.</li>
+<li>	<b><u>ls</u></b>  - list - Linux shell command that lists information about about files and directories.  Part of the GNU core utilites which are installed on all Linux distributions. </li>
+<li>	<b><u>man</u></b>  - manual - interface to the on-line reference manuals.  It provides a detailed view of the command which includes NAME, SYNOPSIS, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUES, ERRORS, FILES, VERSIONS, EXAMPLES, AUTHORS and SEE ALSO.</li>
+<li>	<b><u>ping</u></b>  - Ping or Packet Internet Groper - It uses ICMP (Internet Control Message Protocol) to communicate to other devices. </li>
+<li>	<b><u>tail</u></b>  - reads the last 10 lines of any given file name.</li>
+<li>	<b><u>top</u></b>  - task manager program - displays processor activity of your Linux box (cpu and memory) and also displays tasks managed by kernel in real-time. </li>
+<pre>
+		PID: It is the task's process id.
+		USER: It is the effective user name of the task's owner.
+		PR: It is the priority of the task.
+		NI: The nice value of a task.  A negative nice value means higher priority, whereas a positive nice value means a lower priority.  Zero in this field simply means priority will not be adjusted in determining a task's dispatchability.
+		VIRT: It is the total amount of virtual memory used by a task.
+		RES: It is the Resident size, the non-swapped physical memory a task has used.
+		SHR: It means the Shared Mem size (kb), the amount of shared memory used by a task.
+		%CPU: It shows the CPU usage.  The task's share of the elapsed CPU time since the last screen update, expressed as a percentage of total CPU time.
+		%MEM: It shows the Memory usage, a task's currently used share of available physical memory.
+		TIME+: CPU Time, the same as 'TIME', but reflecting granularity through hundredths of a second.
+		COMMAND: Display the command line used to start a task or the name of associated program.
+</pre>
+<li>	<b><u>w</u></b>  - provides a <i>quick</i> summary of every user logged into a computer, what each user is currently doing, and what load is imposing on the computer itself. (combines; who, uptime, and ps -a). </li>
+<li>	<b><u>who</u></b>  - show who is logged on - displays a list of users who are currently logged into the computer.  The <i>who</i> command is related to the command <i>w</i>, which provides the same information but also displays additional data and statistics.</li>
+<li>	<b><u>whoami</u></b>  - in computing, <i>whoami</i> is a command found on most Unix-like operating systems, Intel iRMX 86, every Microsoft Windows operating system since Windows Server 2003, and on ReactOS.  It is a concatenation of the words "Who am I?" and prints the effective username of the current user when invoked.</li>
+<br>
+<b>Note:</b> You can manage files effectively with <i><b>head, tail</b></i> and <i><b>cat.</i></b></br>
+</small></ul>
+</font>
+<font color="black">
+<br>
+<p><big>
+Terminal: GNOME v3.28.2 - a free and open-source desktop environment for Unix-like operating systems (Linux 7.6).
+</big><br>
+<u>G</u>NU <u>N</u>etwork <u>O</u>bject <u>M</u>odel <u>E</u>nvironment
+</p>
+
+<p>
+
+<big>
+  ORION - Running SAIPH & RIGEL
+</big></p>
+
+<ul><li>
+	System Controller (Saiph - top right). </li>
+<li>	Ping Network Towers and Relays (if needed). </li>
+<li>	Check Network Statistics, log files (if available) and down time with Network Towers/Relays. </li>
+<li>	Check for duplicate Miles using MilesChecker.sh in /usr/local/Orion/orion-common/ save copy in ~/Desktop/Miles-mmddyy-hhmm.csv.</li>
+<li>	Check freddies for NON-green.</li>
+</ul>
+<!-- dailychk: Daily NOC Operator Checklist -->
+<br>
+
+<!------------------------------------------------------------------------->
+
+<p id="dailychk">
+<font color="FF33BB"><big>
+<center>
+DAILY NOC OPERATOR CHECKLIST</center></big></p>
+<ol><li>
+	Check with shift leads for any shift assignments.</li>
+<li>	Check white board for info from previous shifts.</li>
+<li> 	Entry new entries & verify (verify, then verify again).</li>
+<li>	Restart RIGEL & SAIPH & NET STATS page before lanes begin.</li>
+<li>	Make detailed notes to shifts in NOC log.</li>
+<li>	Check ALL NET STATS and RELAYS at least hourly & report to RF any down status.</li>
+<li>	Use sign-out sheet for Fredi's, vehicles, equipment & radios.</li>
+<li>	Check with TAC for lane tracking daily & fill out sheets while tracking units running lanes.</li>
+<li>	Get list of Take Home Packages (THP's) from TAC & create with duplicates as requested.</li>
+<li>	Verify all entities in Saiph with range ops tracking issue report.</li>
+<li>	Police trash, sweep & mop as needed.  Trash to dumpster.</li>
+<li>	Assist, as needed, anyone who comes into NOC seeking assistance.  Refer to shift lead.</li>
+<li>	Write any cross info on white board for next shift(s).</li>
+</ol>
+<br>
+<br>
+<br>
+<br>
+
+<!------------------------------------------------------------------------->
+
+<!-- fredi: Adding a FREDI -->
+<p id="fredi">
+<font color="CC0000"><big>
+<center>
+ADDING A FREDI/EDI</center></big></p>
+<ol>
+<li>  Click <b>Applications</b> >  <b>Orion</b> > <b>Saiph</b>.</li>
+<li>  With Saiph open, click <b>"New"</b> <i>Top left of entity window;</i></li>
+<li>  Enter <b>Instrument ID:</b> <i>This will be the number of EDI/FREDI;</i></li>
+<li>  Select the <b>Network ID</b> associated with the device you are entering;<br><i>(White = 8, Yellow = 9, Blue = 10, and Red = 11)</i></br></li>
+<li>  Set <b>Update Interval</b> as instructed;</li>
+<li>  <b>Entity Type:</b> Human or Platform?</li>
+<li>  Select <b>Type ...</b></li>
+<li>  <b>Name;</b> (ex: Last Name, First Name)</li>
+<li>  <b>Call Sign;</b> (ex: rank_LastName_FirstName)</li>
+<li>  Select <b>Unit</b>; (ex: 1-161 IN: A Co IN: HQ)</li>
+<li>  Click <b>"Save"</b> </li>
+</ol>
+<br><br><br><br>
+
+<font color="0099CC">
+<br>
+
+<!------------------------------------------------------------------------->
+
+<!-- C-I-T-K-M: Check Definitions -->
+<p id="citkm"><big>
+<font color="0099CC">
+<center>
+<b>C-I-T-K-M DEFINITIONS</b></p>
+</center>
+</big>
+<font size="3">
+  <b><u>C = Comm</u></b>
+    <blockquote>
+      <font color="grey";size="75%">C-Grey:</font>  Device is not in Comms (Either not turned on or not working)<br>
+      <font color="red">C-Red:</font>   Device has log/is out of Comms (Dense vegetation or inside building)<br>
+      <font color="green">C-Green:</font> Device is communicating.</br>
+    </blockquote>
+<br>
+  <b><u>I = Initialization</u></b></br>
+    <blockquote>
+      <font color="grey">I-Grey:</font>  Device has not been initialized (Either not turned on or not working)<br>
+      <font color="red">I-Red:</font>   Device has failed initialization (Wrong Network ID or not turned on)<br>
+      <font color="green">I-Green:</font> Device has initialized and is working properly.<br>
+    </blockquote>
+<br>
+  <b><u>T = Tracking</u></b></br>
+    <blockquote>
+      <font color="grey">T-Grey:</font>  Device is not GPS tracking (Either not turned on or not working)<br>
+      <font color="red">T-Red:</font>   Device is not GPS tacking (Dense vegetation or inside building)<br>
+      <font color="green">T-Green:</font> Device was GPS tracking properly.<br>
+    </blockquote>
+<br>
+  <b><u>K = Kill (Life Status)</u></b></br>
+    <blockquote>
+      <font color="grey">K-Grey:</font>  Device has no life status (Either not turned on or not working)<br>
+      <font color="red">K-Red:</font>   Device has been Miles killed (Device is destroyed)<br>
+      <font color="green">K-Green:</font> Device is Alive.<br>
+    </blockquote>
+<br>
+  <b><u>M = Miles Status</u></b></br>
+    <blockquote>
+      <font color="grey">M-Grey:</font>  Device has no Miles paired (Device and Miles are not turned on or not working)<br>
+      <font color="red">M-Red:</font>   Device and Miles do not have a proper PID number<br>
+      <font color="green">M-Green:</font> Device and Miles have proper PID and can produce and receive shotlines.<br>
+    </blockquote>
+<br>
+  <b><u>Miles Shot/Hit Definitions</u></b></br>
+    <blockquote>
+      Paired dots with a line means message received from both devices and produced a "shotline".  This will show which devices are associated with the reported PIDs.<br>
+      <br>
+      A single dot means that the system received a message that reported a shot.  There may be a hit but it won't be from the same device that shot.  Miles shots are reported by who was hit.<br>
+      <br>
+      An animated white circle means the system received a message that an entity was hit.  If one has an improper PID, a shotline may not show but there will be a hit.<br>
+      <br>
+      The color of the dots and lines are determined by what group the device is under.  (Blue = Friendly, Red = Hostile and Grey = Unknown).
+    </blockquote>
+</font>
+<br>
+
+<!------------------------------------------------------------------------->
+
+<!-- dthp: Creating a DVD Take Home Package -->
+
+<font color="3333FF">  <!-- blue -->
+<p id="dthp"><p><b><big><center>
+<b><big>
+CREATING A DVD TAKE HOME PACKAGE (DTHP)</center></big></b></p>
+<ol>
+<li>  Click <b>Applications</b> > <b>Orion</b> ><b> Take Home Package Builder</b><br>  With information provided by the TAC chief or AARPTL, create each DTHP as follows;</br>
+<li>  Select the appropriate package <br></li>
+	(For example, TAC2.local-15 is the 15th package created by TAC2. The timestamp is at the front of the filename).</br></li>
+<li>  Click <b>Create Package</b> (bottom button).<br>
+   While process is running, take a blank CD and use a fine Sharpie to write the TAC line info on the disk (ex; TAC 3) unit name, date/time of lane, lane number and type of exercie (ex; company attack).</li>
+<li>  Put the disk in the PROPER client server CD slot
+<li>  Insert an unused DVD with the XCTC exercise information pre-printed on it.</li>
+<li>  Click <b>Burn</b> in the lower right-hand corner of the screen.</li>
+<li>  Once the Properties screen pops up, verify the proper boxes have been selected.</li>
+<li>  Click <b>Burn</b> again.</li>
+<li>  Take the DVD (now the DTHP's master copy) and, per the network supervisors guidance, create copies using the DVD duplicator.
+<br>  Note: Some packages are too large to fit on one (1) master.  They will have two (2) packages on the same line (ex; TAC 1-51, 1-52) meaning two master disks will be needed.<br>
+<br>  <b>EACH MASTER MUST BE CHECKED!!! (See Next Paragraph; CHECKING PACKAGES)</b><br>
+</ol>
+<!------------------------------------------------------------------------->
+
+<br>
+<!-- chkpkg: Check Package -->
+
+<font color="ff6200">
+<p id-"chkpkg";style="font-size=200%">  <!-- medium brown -->
+
+<big><b><center>CHECKING PACKAGES</center></b></big></p>
+<ol style="font-size=100%; margin-left: 10px"><br>
+Note:  Use one of the laptops available.  Check with your Lead or FAE to see which laptop can be used.<br><br>
+<li>  Click <b>Open Folder</b> to review files in FLEXTRAIN GUMP.</li>
+<li>  Double-click <b>Setup</b> and set destination to <b>Desktop</b> if needed.</li>
+<li>  Click <b>Install</b> ...wait...</li>
+<li>  Once installed, Double-click <b>"FLEXTRAIN"</b> using the Desktop Icon. <br>
+	Leave the Logger Running when the info box pops up.</li>
+<li>  Verify Rigel is Open.  If not, open it.</li>
+<li>  Check ALL annotations using the left tab.  Verify are populated, markers are in place and on the time line.  Verify pegs and vehicle icons in the map.<br>
+	You will have to change units for ALL the annotations to show (bottom middle annotations box, if multiple units). </li>
+<b><font color="FF0000"> MAKE SURE IT'S ALL THE WAY FROM BEGINNING TO END!!!</b></font color>
+<li>  After you finish, close the program, take out CD, put Yellow stickie on it.  Keep with rest of the Masters (ask where).</li>
+<li>  You MUST Uninstall each disk before checking in a new one.  OR, the files will be CORRUPT from the old disk info.</li>
+<li>  <b>Start > Control Panel > Programs and Features</b><br>
+	Right-click <b>"FLEXTRAIN"</b><br>
+	Click <b>UNINSTALL<b><br>
+	Now, ready for next disk.
+</ol>
+</p>
+<!------------------------------------------------------------------------->
+<br>
+<!-- acronyms: Acronyms used by the NOC -->
+<font color="oe6251">
+<p id="acronyms">
+
+<style>
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+tr {
+  text-align:center;
+}
+</style>
+
+<b><big><center>
+NETWORK OPERATIONS CENTER (NOC) COMMONLY USED ACRONYMS</center></big></b></p></div>
+<br>
+<head>
+</head>
+<body>
+<table style="width:50%">
+  <tr>
+    <th>Acronym</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>AAR</td>
+    <td><b>A</b>fter-</b><b>A</b>ction <b>R</b>eview</td>
+  </tr>
+  <tr>
+    <td>AARPTL</td>
+    <td><b>A</b>fter-<b>A</b>ction <b>R</b>eview <b>P</b>roduction <b>T</b>eam-<b>L</b>eader</td>
+  </tr>
+  <tr>
+    <td>CAC</td>
+    <td><b>C</b>ommon <b>A</b>ccess <b>C</b>ard</td>
+  </tr>
+  <tr>
+    <td>COB</td>
+    <td><b>C</b>ivilian <b>O</b>n the <b>B</b>attlefield</td>
+  </tr>
+  <tr>
+    <td>COP</td>
+    <td><b>C</b>ommon <b>O</b>perating <b>P</b>icture</td>
+  </tr>
+  <tr>
+    <td>DTHP</td>
+    <td><b>D</b>igital <b>T</b>ake-<b>H</b>ome <b>P</b>ackage</td>
+  </tr>
+  <tr>
+    <td>DVR</td>
+    <td><b>D</b>igital <b>V</b>ideo <b>R</b>ecorder</td>
+  </tr>
+  <tr>
+    <td>EDI</td>
+    <td><b>E</b>nhanced <b>D</b>ismount <b>I</b>nstrumentation</td>
+  </tr>
+  <tr>
+    <td>ESC</td>
+    <td><b>E</b>xercise <b>S</b>upport <b>C</b>ell</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>EXCON</td>
+    <td><b>E</b>xercise <b>C</b>ontrol</td>
+  </tr>    <td>FAE</td>
+    <td><b>F</b>ield <b>A</b>pplication <b>E</b>ngineer</td>
+  </tr>
+  <tr>
+    <td>FOB</td>
+    <td><b>F</b>orward <b>O</b>perations <b>B</b>ase</td>
+  </tr>
+  <tr>
+    <td>FREDI</td>
+    <td><b>F</b>irst <b>R</b>esponder <b>E</b>nhanced <b>D</b>ismount <b>I</b>nfantry</td>
+  </tr>
+  <tr>
+    <td>FSR</td>
+    <td><b>F</b>ield <b>S</b>ervice <b>R</b>epresentative</td>
+  </tr>
+  <tr>
+    <td>GPS</td>
+    <td><b>G</b>lobal</b> <b>P</b>ositioning <b>S</b>ystem</td>
+  </tr>
+  <tr>
+    <td>GUI</td>
+    <td><b>G</b>raphic <b>U</b>ser <b>I</b>nterface</td>
+  </tr>
+  <tr>
+    <td>HBSS</td>
+    <td><b>H</b>ost <b>B</b>ased <b>S</b>ecurity <b>S</b>ystem</td>
+  </tr>
+  <tr>
+    <td>HHV</td>
+    <td><b>H</b>and <b>H</b>eld <b>V</b>ideo</td>
+  </tr>
+  <tr>
+    <td>I&C</td>
+    <td><b>I</b>nstrumentation <b>&</b> <b>C</b>ommunications</td>
+  </tr>
+  <tr>
+    <td>IED</td>
+    <td><b>I</b>mprovised <b>E</b>xplosive <b>D</b>evice</td>
+  </tr>
+  <tr>
+    <td>IPA</td>
+    <td><b>I</b>dentify <b>P</b>olicy <b>A</b>udit (Security System)</td>
+  </tr>
+  <tr>
+    <td>Lane</td>
+    <td>Reference to the geographical location where training begins and ends</td>
+  </tr>
+  <tr>
+    <td>LOS</td>
+    <td><b>L</b>ine <b>O</b>f <b>S</b>ight</td>
+  </tr>
+  <tr>
+    <td>MAARC</td>
+    <td><b>M</b>obile <b>A</b>fter <b>A</b>ction <b>R</b>eview <b>C</b>enter</td>
+  </tr>
+  <tr>
+    <td>MGRS</td>
+    <td><b>M</b>ilitary <b>G</b>rid <b>R</b>efence <b>S</b>ystem</td>
+  </tr>
+  <tr>
+    <td>MILES</td>
+    <td><b>M</b>ultiple <b>I</b>ntegrated <b>L</b>aser <b>E</b>ngagement <b>S</b>ystem</td>
+  </tr>
+  <tr>
+    <td>NOC</td>
+    <td><b>N</b>etwork <b>O</b>perations <b>C</b>enter</td>
+  </tr>
+  <tr>
+    <td>NOTL</td>
+    <td><b>N</b>etwork <b>O</b>perations <b>T</b>eam <b>L</b>eader</td>
+  </tr>
+  <tr>
+    <td>OC</td>
+    <td><b>O</b>bserver/<b>C</b>ontroller</td>
+  </tr>
+  <tr>
+    <td>OPFOR</td>
+    <td><b>O</b>position <b>F</b>orce</td>
+  </tr>
+  <tr>
+    <td>OUM</td>
+    <td><b>O</b>perator <b>U</b>ser <b>M</b>anual</td>
+  </tr>
+  <tr>
+    <td>PID</td>
+    <td><b>P</b>layer <b>I</b>dentification</td>
+  </tr>
+  <tr>
+    <td>PIN</td>
+    <td><b>P</b>ersonal <b>I</b>dentification <b>N</b>umber</td>
+  </tr>
+  <tr>
+    <td>PSOC</td>
+    <td><b>P</b>roducts and <b>S</b>ervices <b>O</b>peration <b>C</b>enter</td>
+  </tr>
+  <tr>
+    <td>RSOI</td>
+    <td><b>R</b>eception <b>S</b>taging <b>O</b>nward movement <b>I</b>ntegration</td>
+  </tr>
+  <tr>
+    <td>SINCGARS</td>
+    <td><b>S</b>ingle-<b>C</b>hannel <b>G</b>round and<b>A</b>irborne <b>R</b>adio <b>S</b>ystem</td>
+  </tr>
+  <tr>
+    <td>TAC</td>
+    <td><b>T</b>actical <b>A</b>nalysis <b>C</b>enter</td>
+  </tr>
+  <tr>
+    <td>UPS</td>
+    <td><b>U</b>ninterruptable <b>P</b>ower <b>S</b>upply</td>
+  </tr>
+  <tr>
+    <td>VTHP</td>
+    <td><b>V</b>ideo <b>T</b>ake-<b>H</b>ome <b>P</b>ackage</td>
+  </tr>
+  <tr>
+    <td>XCTC</td>
+    <td>e<b>X</b>portable <b>C</b>ombat <b>T</b>raining <b>C</b>enter</td>
+  </tr>
+  <tr>
+    <td>Tango-Mike</td>
+    <td><b>T</b>hanks <b>M</b>uch</td>
+  <tr>
+    <td>Lima-Charlie</td>
+    <td><b>L</b>oud and <b>C</b>lear</td>
+  </tr>
+  </tr>
+</table>
+</body>
+</p><br><br>
+
+<!------------------------------------------------------------------------->
+
+<!-- troubleshooting tower relays -->
+<p id="towers">
+
+<style>
+<-- For div class - 2 columns with a table in each -->
+* {
+  box-sizing: border-box;
+  background: white;
+}
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.left {
+  width: 45%;
+  background: white;
+  float: left;
+}
+.right {
+  width: 45%;
+  background: white;
+  float: right;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table.one {
+  width: 45%;
+  float: left;
+  border: none;
+}
+  th, td {
+    padding: 0.25rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+  tbody tr:hover {
+    background: yellow;
+    height: 20px;
+}
+table.two {
+  width: 45%;
+  background: green;
+  float: left;
+  border: solid 3px black;
+}
+  th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+</style>
+
+<center>
+<b>
+<h5 style="background-color: #ccffcc; border: 3px solid black">
+TROUBLESHOOTING TOWER RELAYS
+</h5>
+
+<h4>
+IP ADDRESS 10.51.10.
+</h4>
+
+<h5>
+(FIRST THREE OCTETS NEVER CHANGE)
+</h5>
+</b>
+</center>
+
+<!--  <div class="row">
+-->
+    <div class="column left;background-color:white;">
+    <table style="display:inline-block;">
+    <colgroup>
+      <col style="background-color:#ccffcc">  <!- light green -->
+      <col style="background-color:white">
+      <col style="background-color:yellow">
+      <col style="background-color:#488ac7"> <!-- silk blue -->
+      <col style="background-color:red">  
+    </colgroup>
+  <tr height = 16px; border-spacing: 0; padding: 0;></tr>
+    <th><b>Relay Name</b></th>
+    <th><b>NET 8</b></th>
+    <th><b>NET 9</b></th>
+    <th><b>NET 10</b></th>
+    <th><b>NET 11</b></th>
+  <tr height = 20px></tr>
+    <td>MASTER</td>
+    <td>.80</td>
+    <td>.90</td>
+    <td>.100</td>
+    <td>.110</td>
+  <tr height = 20px></tr>
+    <td>RELAY 1</td>
+    <td>.81</td>
+    <td>.91</td>
+    <td>.101</td>
+    <td>.111</td>
+  <tr height = 20px></tr>
+    <td>RELAY 2</td>
+    <td>.82</td>
+    <td>.92</td>
+    <td>.102</td>
+    <td>.112</td>
+  <tr height = 20px></tr>
+    <td>RELAY 3</td>
+    <td>.83</td>
+    <td>.93</td>
+    <td>.103</td>
+    <td>.113</td>
+  <tr height = 20px></tr>
+    <td>RELAY 4</td>
+    <td>.84</td>
+    <td>.94</td>
+    <td>.104</td>
+    <td>.114</td>
+  <tr height = 20px></tr>
+    <td>RELAY 5</td>
+    <td>.85</td>
+    <td>.95</td>
+    <td>.105</td>
+    <td>.115</td>
+  <tr height = 20px></tr>
+    <td>RELAY 2A</td>
+    <td>.86</td>
+    <td>.96</td>
+    <td>.106</td>
+    <td>.116</td>
+  <tr height = 20px></tr>
+    <td>RELAY 3A</td>
+    <td>.87</td>
+    <td>.97</td>
+    <td>.107</td>
+    <td>.117</td>
+  <tr height = 20px></tr>
+    <td>RELAY 4A</td>
+    <td>.88</td>
+    <td>.98</td>
+    <td>.108</td>
+    <td>.118</td>
+  <tr height = 20px></tr>
+    <td>RELAY 5A</td>
+    <td>.89</td>
+    <td>.99</td>
+    <td>.109</td>
+    <td>.119</td>
+  </table>
+
+  <div class="column right;background-color:white;">
+    <table style="float: right;">
+      <tr>Directions;</tr>
+      <tr><b>PING the network node to verify if it is active:</b></tr>
+      <tr>1) Find and click on the <b>MONITOR</b> icon in the top left of the screen.  This will open a Command Prompt (blinking cursor '$').</tr>
+      <tr rowspan="3">2) Type "$ping -c #" where '#' is number of pings, then the IP Address of the node you wish to verify.  <b>EXAMPLE: </b>$ping -c 7 10.51.10.80.</tr>
+      <tr rowspan="3">3a) A successful test will show how many milliseconds it took to reach the device.</tr>
+      <tr rowspan="2">3b) An unsuccessful test will result in "Destination Host Unreachable" with 100% packet loss.</tr>
+      <tr rowspan="3">4) If test is unsuccessful, refer to the NET OPS Contact Sheet and call the RFComm Tech on duty (see schedule).</tr>
+    </table>
+    </div>
+<!------------------------------------------------------------------------------------------------------------------
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding; 5px;
+  background-color: #3333ff;
+  border: 2px solid #4caf50;
+}
+------------------------------------------------------------------------------------------------------------------>
+<p id="goto here">
+</p>
+</html>
+
+
